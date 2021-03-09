@@ -1,4 +1,4 @@
-Package: bridgePrism
+Package: bertensPrism
 Title: Peer Models Network PRISM Bridge for the Model bertens
 Version: 0.0.1
 Authors@R: c(

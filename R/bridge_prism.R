@@ -4,11 +4,11 @@ model_run<-function(model_input = NULL)
   input<-unflatten_list(model_input)
   # replace the function below with main model function takes model inputs and returns the output.
   # for example, for bode package we will have:
-  # results <- bode              (FEV1                   =model_input$FEV1,
-  #                               mMRC                   =model_input$mMRC,
-  #                               BMI                    =model_input$BMI,
-  #                               walk                   =model_input$walk)
-  #
+   results <- bertens          (exacerbationHx          =model_input$exacerbationHx,
+                                fev1                    =model_input$fev1,
+                                packYears               =model_input$packYears,
+                                vascularDx              =model_input$vascularDx)
+
   # for cfmortality package, we will have:
   # results <- predictcfmortality(age                    =model_input$age,
   #                               male                   =model_input$male,
@@ -29,11 +29,11 @@ model_run<-function(model_input = NULL)
 get_default_input <- function() {
   # replace the function below with default model inputs for the new Prism model.
   # for example, for bode package we will have:
-  # model_input <- list(FEV1                   = 40,
-  #                     mMRC                   = 3,
-  #                     BMI                    = 22,
-  #                     walk                   = 100)
-  #
+   model_input <- list(exacerbationHx        = TRUE,
+                       fev1                  = 32.9,
+                       packYears             = 38,
+                       vascularDx            = TRUE)
+
   # for cfmortality package, we will have:
   # model_input <- list(age                    = 16,
   #                     male                   = 0,

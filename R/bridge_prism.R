@@ -26,7 +26,7 @@ model_run<-function(model_input = NULL)
 }
 
 
-get_default_input <- function() {
+prism_get_default_input <- function() {
   # replace the function below with default model inputs for the new Prism model.
   # for example, for bode package we will have:
    model_input <- list(exacerbationHx        = TRUE,
